@@ -1,29 +1,20 @@
 <!DOCTYPE html>
 <html>
-<head> 
-    <title>Coder</title>
+<head>
+    <title>Night/Day</title>
     <meta charset="utf-8">
-    <!-- Standard Coder Includes -->
-    <script>
-        var appname = "{{app_name}}"; //app name (id) of this app
-        var appurl = "{{&app_url}}";
-        var staticurl = "{{&static_url}}"; //base path to your static files /static/apps/yourapp
-    </script>
-    <link href="/static/apps/coderlib/css/index.css" media="screen" rel="stylesheet" type="text/css"/>
-    <script src="/static/common/js/jquery.min.js"></script>
-    <script src="/static/common/ace-min/ace.js" type="text/javascript" charset="utf-8"></script>
-    <script src="/static/apps/coderlib/js/index.js"></script>
-    <script>
-        Coder.addBasicNav();
-    </script>
-    <!-- End Coder Includes -->
 
-    <!-- This app's includes -->
-    <link href="{{&static_url}}/css/index.css" media="screen" rel="stylesheet" type="text/css"/>
-    <script src="{{&static_url}}/js/index.js"></script>
-    <!-- End apps includes -->
+    <link rel="stylesheet" type="text/css" href="../static/css/index.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="..static/js/scripts.js"></script>
+    <!--script src="/static/common/ace-min/ace.js" type="text/javascript" charset="utf-8"></script>-->
+    <!--script src="/static/apps/coderlib/js/index.js"></script>-->
+
 </head>
 <body>
+    <div class="pagecontent">
+        <button>Launch Missles!</button>
+    </div>
     <div id= "orb" class= "sun">
         <div id= "moonspot1"></div>
         <div id= "moonspot2"></div>
