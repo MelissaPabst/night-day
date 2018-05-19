@@ -5,33 +5,7 @@
 // the HTML content.
 $(document).ready(function(){
 
-  $('button').click(function(){
-    if($('body').hasClass('black')) {
-      $('body').removeClass('black');
-    }
-    else {
-      $('body').addClass('black');
-    }
-  });
 
-    // Everything inside this function (look up, see the word function?)
-    // runs as soon as that "ready" event happens. Everything
-    // between that curly bracket above and the one way down at the
-    // bottom is inside this function.
-
-    // Note that we indent everything inside the function.
-    // It makes it easier for us to read and understand what
-    // is inside the function, and what is outside.
-
-    // Your browser doesn't care about indentation, it only cares
-    // about those curly brackets to tell it where the function
-    // starts and ends. So watch your typing carefully!
-
-
-
-    // Here's another "event handler" with a function inside.
-    // This looks for the element with CSS ID "orb" and runs the
-    // function every time "orb" is clicked.
     $('#orb').click(function() {
 
         // Note that we're indenting another level here.
@@ -50,7 +24,7 @@ $(document).ready(function(){
             $('#orb').removeClass('moon').addClass('sun');
         }
 
-        // Let's do the same thing for the #sky div.
+        //same thing for the #sky div.
         if ($('#sky').hasClass('day')) {
             $('#sky').removeClass('day').addClass('night');
         } else {
